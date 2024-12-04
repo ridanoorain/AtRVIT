@@ -4,7 +4,7 @@ import './Offers.css';
 const Offers = () => {
   return (
     <div className="offers-container offers">
-      <h1 className="offers-heading">Offers</h1>
+      <h1 className="offers-heading">Available Offers</h1>
       <nav className="offers-navbar">
         <a href="#hotels" className="active">Hotels</a>
         <a href="#flights">Flights</a>

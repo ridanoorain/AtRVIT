@@ -23,7 +23,10 @@ const AdvanceSearch = () => {
   function validate(){
     if (!location || !guest){
       alert("Input all the values before trying to search.")
+      return
     }
+    document.getElementById("tours").scrollIntoView()
+
   }
 
   return (
@@ -78,15 +81,15 @@ const AdvanceSearch = () => {
                     label="Guest"
                     onSelect={selectedGuest}
                     options={[
-                      "2 adults, 1 children",
-                      "	2 adults, 1 children",
-                      "2 adults, 3 children",
+                      "1 Adult",
+                      "2 Adults",
+                      "3 Adults",
                     ]}
                   />
                 </div>
                 <div className="item-search bd-none">
                     <Button className="primaryBtn flex-even d-flex justify-content-center" onClick={validate}>
-                    <i className="bi bi-search me-2"></i> Search 
+                    <i className="bi bi-search me-2" ></i> Search 
                     </Button>
 
                 </div>

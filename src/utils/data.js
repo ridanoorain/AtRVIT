@@ -1,5 +1,5 @@
 // destinations img
-import tour4 from "../assets/images/tour/Tokyo.png";
+import tour4 from "../assets/images/tour/Tokyo.jpg";
 import tour5 from "../assets/images/tour/bali-1.png";
 import tour6 from "../assets/images/tour/bangkok.png";
 import tour7 from "../assets/images/tour/cancun.png";
@@ -9,14 +9,14 @@ import tour10 from "../assets/images/tour/paris.png";
 import tour11 from "../assets/images/tour/malaysia.png";
 
 // populars img
-import Anchorage from "../assets/images/popular/Anchorage To La Paz.jpg";
-import Singapore from "../assets/images/popular/Discover Singapore.png";
-import Kiwiana from "../assets/images/popular/Kiwiana Panorama.jpg";
-import Quito from "../assets/images/popular/Anchorage To Quito.jpg";
-import Cuzco from "../assets/images/popular/Cuzco To Anchorage.jpg";
-import Ushuaia from "../assets/images/popular/Anchorage To Ushuaia.jpg";
-import Santiago from "../assets/images/popular/Anchorage To Santiago.jpg";
-import Explorer from "../assets/images/popular/LA Explorer.jpg";
+import Anchorage from '../assets/images/popular/beach-goa.webp'
+import Singapore from '../assets/images/popular/alleppey.webp'
+import Kiwiana from '../assets/images/popular/coorg-karnataka.webp'
+import Quito from '../assets/images/popular/hampi-karnataka.webp'
+import Cuzco from '../assets/images/popular/india-mumbai.webp'
+import Ushuaia from '../assets/images/popular/mysore.webp'
+import Santiago from '../assets/images/popular/ooty.webp'
+import Explorer from '../assets/images/popular/pattadakal.webp'
 
 // tour detail img
 import image1 from "../assets/images/new/1.jpg";
@@ -31,7 +31,7 @@ import image8 from "../assets/images/new/8.jpg";
 export const destinationsData = [
   {
     id: 0,
-    name: "Bali",
+    name: "Goa",
     tours: "5 tours and activities",
     image: tour5,
     link: "tour-name",
@@ -39,7 +39,7 @@ export const destinationsData = [
   },
   {
     id: 1,
-    name: "Tokyo",
+    name: "Banglore",
     tours: "9 tours and activities",
     image: tour4,
     link: "tour-name",
@@ -47,7 +47,7 @@ export const destinationsData = [
 
   {
     id: 2,
-    name: "Bangkok",
+    name: "Hyderabad",
     tours: "5 tours and activities",
     image: tour6,
     link: "tour-name",
@@ -55,35 +55,35 @@ export const destinationsData = [
 
   {
     id: 3,
-    name: "Cancun",
+    name: "Chennai",
     tours: "4 tours and activities",
     image: tour7,
     link: "tour-name",
   },
   {
     id: 4,
-    name: "Nha Trang",
+    name: "Mumbai",
     tours: "9 tours and activities ",
     image: tour8,
     link: "tour-name",
   },
   {
     id: 5,
-    name: "Phuket",
+    name: "Lha",
     tours: "4 tours and activities",
     image: tour9,
     link: "tour-name",
   },
   {
     id: 6,
-    name: "Paris",
+    name: "Ladak",
     tours: "6 tours and activities",
     image: tour10,
     link: "tour-name",
   },
   {
     id: 7,
-    name: "Malaysia",
+    name: "Manali",
     tours: "4 tours and activities",
     image: tour11,
     link: "tour-name",
@@ -93,102 +93,101 @@ export const destinationsData = [
 export const popularsData = [
   {
     id: 0,
-    title: "Discover Singapore",
+    title: 'Alleppey',
     image: Singapore,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["Escorted Tour", "Rail Tour"],
-    days: "5 days - 4 nights",
-    price: 100,
-    afterDiscount: 92,
-    rating: 3,
+    location: 'Kerela, India',
+    category: ['Escorted Tour', 'Rail Tour'],
+    days: '5 days - 4 nights',
+    price: 1000,
+    afterDiscount: 9200,
+    rating: 'Kapil Sharma',
     reviews: 5,
   },
   {
     id: 1,
-    title: "Kiwiana Panorama",
+    title: 'Coorg',
     image: Kiwiana,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["River Cruise", "Wildlife"],
-    days: "2 days - 1 nights",
-    price: 87,
-    afterDiscount: 82,
-    rating: 4,
+    location: 'Karnataka, India',
+    category: ['River Cruise', 'Wildlife'],
+    days: '2 days - 1 nights',
+    price: 8750,
+    afterDiscount: 8200,
+    rating: 'Shahrukh khan',
     reviews: 9,
   },
   {
     id: 2,
-    title: "Anchorage To Quito",
+    title: 'Hampi',
     image: Quito,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["Escorted Tour", "River Cruise"],
-    days: "2 days - 1 nights",
-    price: 87,
-    afterDiscount: 82,
-    rating: 4,
+    location: 'Vijaynagara, Karnataka, India',
+    category: ['Escorted Tour', 'Temple'],
+    days: '2 days - 1 nights',
+    price: 8700,
+    afterDiscount: 8200,
+    rating: 'Salman Khan',
     reviews: 9,
   },
   {
     id: 3,
-    title: "Anchorage To La Paz",
+    title: 'Baga Beach',
     image: Anchorage,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["River Cruise", "Rail Tour"],
-    days: "unlimited",
-    price: 434,
-    afterDiscount: 0,
-    rating: 5,
+    location: 'Goa, India',
+    category: ['River Cruise', 'Rail Tour'],
+    days: 'unlimited',
+    price: 30000,
+    afterDiscount: 30000,
+    rating: 'Scarlett Johnson',
     reviews: 20,
   },
   {
     id: 4,
-    title: "Cuzco To Anchorage",
+    title: 'Gateway of India',
     image: Cuzco,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["River Cruise", "Tour & Cruise"],
-    days: "1 days - 9 hours",
-    price: 395,
-    afterDiscount: 0,
-    rating: 3,
+    location: 'South Mumbai, Maharashtra',
+    category: ['River Cruise', 'Tour & Cruise'],
+    days: '1 days - 9 hours',
+    price: 3950,
+    afterDiscount: 3500,
+    rating: 'Alia Bhatt',
     reviews: 12,
   },
   {
     id: 5,
-    title: "Anchorage To Ushuaia",
+    title: 'Mysore Palace',
     image: Ushuaia,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["Escorted Tour", "Wildlife"],
-    days: "5 days - 4 nights",
-    price: 93,
-    afterDiscount: 0,
-    rating: 3,
+    location: 'Karnataka, India',
+    category: ['Escorted Tour', 'Wildlife'],
+    days: '5 days - 4 nights',
+    price: 930,
+    afterDiscount: 900,
+    rating: 'Deepika Khan',
     reviews: 12,
   },
   {
     id: 6,
-    title: "Anchorage To Santiago",
+    title: 'Chikkamangaluru',
     image: Santiago,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["Escorted Tour", "Wildlife"],
-    days: "1 day - 1 night",
-    price: 42,
-    afterDiscount: 0,
-    rating: 5,
+    location: 'Karnataka',
+    category: ['Escorted Tour', 'Wildlife'],
+    days: '1 day - 1 night',
+    price: 4200,
+    afterDiscount: 4000,
+    rating: 'Abdul Mishra',
     reviews: 18,
   },
   {
     id: 7,
-    title: "LA Explorer",
+    title: 'Dwarka',
     image: Explorer,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["Rail Tour", "Tour & Cruise"],
-    days: "1 night",
-    price: 99,
-    afterDiscount: 0,
-    rating: 4,
+    location: 'Gujarat, India',
+    category: ['Rail Tour', 'Tour & Cruise'],
+    days: '1 night',
+    price: 9900,
+    afterDiscount: 9000,
+    rating: 'Mohd. Ravishankar Mathew     ',
     reviews: 22,
   },
-];
-
+]
 export const tourDetails = {
   title: "Beautiful Bali with Malaysia",
   des: ` Bali, also known as the land of gods has plenty to offer to travelers from across the globe. As it so contrasted oh estimating instrument. Size like body some one had.  Are conduct viewing boy minutes warrant the expense?  Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted.  Lively use looked latter regard had. Do he it part more  last in. We understand that theory is important to build a solid foundation, we understand that theory alone isn’t going to get the job done so that’s why this is packed with practical hands-on examples that you can  follow step by step.`,
