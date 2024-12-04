@@ -4,6 +4,7 @@ import AdvanceSearch from "../../components/AdvanceSearch/AdvanceSearch";
 import Features from "../../components/Features/Features";
 import { Container, Row, Col,  } from "react-bootstrap";
 
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -77,11 +78,11 @@ const Home = () => {
 
       {/* tour seciton start */}
 
-      <section className="tours_section slick_slider">
+      <div id="places" className="tours_section slick_slider ">
         <Container>
           <Row>
             <Col md="12">
-              <div className="main_heading">
+              <div className="main_heading " id="places">
                 <h1> Top Destination For Your Next Vacation </h1>
               </div>
             </Col>
@@ -99,11 +100,11 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-      </section>
+      </div>
 
       {/* tour seciton start */}
 
-      <section className="popular py-5">
+      <section className="popular py-5" id="tours">
       <Container>
         <Row>
           <Col md="12">
@@ -124,21 +125,19 @@ const Home = () => {
       </Container>
     </section>
 
-      <section className="call_us">
+      <section className="call_us" id="contact">
         <Container>
           <Row className="align-items-center">
             <Col md="8">
-              <h5 className="title">CALL TO ACTION</h5>
+              <h5 className="title" id="contact">CALL TO ACTION</h5>
               <h2 className="heading">
-                READY FOR UNFORGATABLE TRAVEL. REMEMBER US!
+                READY FOR UNFORGETTABLE TRAVEL. REMEMBER US!
               </h2>
               <p className="text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s,{" "}
+              Your perfect getaway awaits! Let us guide you to unforgettable destinations and experiences that will inspire you to travel and explore more.{" "}
               </p>
             </Col>
-            <Col md="4" className="text-center mt-3 mt-md-0">
+            <Col md="4" className="text-center mt-3 mt-md-0 contact">
               <a
                 href="tel:6398312365"
                 className="secondary_btn bounce"
@@ -153,7 +152,7 @@ const Home = () => {
         <div className="overlay"></div>
       </section>
 
-      <section className="gallery">
+      <section id="gallery" className="gallery">
         <Container>
           <Row>
             <Col md="12">

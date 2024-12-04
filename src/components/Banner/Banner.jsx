@@ -17,9 +17,7 @@ const Banner = () => {
                   JOURNEY TO <span>EXPLORE WORLD</span>
                 </h5>
                 <p className="sub_text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
+                Start your journey today and discover new destinations that will create unforgettable memories.<br/> Your next adventure is just a click away.
                 </p>
               </div>
             </Carousel.Caption>
@@ -33,9 +31,7 @@ const Banner = () => {
                   BEAUTIFUL PLACE <span>TO VISIT</span>
                 </h5>
                 <p className="sub_text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
+                Let the world be your playground. From vibrant cities to serene beaches, we’ll help you discover the destinations that <br/> match your travel dreams.
                 </p>
               </div>
             </Carousel.Caption>

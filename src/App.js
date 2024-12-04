@@ -3,6 +3,8 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import Header from "./components/Common/Header/Header";
 import Footer from "./components/Common/Footer/Footer";
+import AboutUs from "./components/About";
+import Offers from "./components/Offers";
 
 
 function App() {
@@ -11,7 +13,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/offers" element={<Offers/>} />
 
       </Routes>
       <Footer />

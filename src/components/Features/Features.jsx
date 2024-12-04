@@ -77,7 +77,7 @@ const Features = () => {
     {
       id: 2,
       image: feature3,
-      title: "Exploring made easyt",
+      title: "Exploring made easy",
       des: "Book last minute, skip lines &amp; get free cancellation for easier exploring.",
     },
 

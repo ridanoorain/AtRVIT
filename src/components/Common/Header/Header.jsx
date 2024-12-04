@@ -9,6 +9,7 @@ import {
 } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "../Header/header.css";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -43,7 +44,7 @@ const Header = () => {
           <Navbar expand="lg" className="p-0">
             {/* Logo Section  */}
             <Navbar.Brand>
-              <NavLink to="/"> Weekendmonks</NavLink>
+              <NavLink to="/"> MyTripMate</NavLink>
             </Navbar.Brand>
             {/* End Logo Section  */}
 
@@ -55,7 +56,7 @@ const Header = () => {
             >
               {/*mobile Logo Section  */}
               <Offcanvas.Header>
-                <h1 className="logo">Weekendmonks</h1>
+                <h1 className="logo">MyTripMate</h1>
                 <span className="navbar-toggler ms-auto"  onClick={toggleMenu}>
                   <i className="bi bi-x-lg"></i>
                 </span>
@@ -67,12 +68,12 @@ const Header = () => {
                   <NavLink className="nav-link" to="/" >
                     Home
                   </NavLink>
-                  <NavLink className="nav-link" to="/" >
+                  <NavLink className="nav-link" to="/about-us" >
                     ABOUT US
                   </NavLink>
-                  <NavLink className="nav-link" to="/" >
+                  <HashLink className="nav-link" to="#tours" >
                     TOURS
-                  </NavLink>
+                  </HashLink>
 
                   <NavDropdown
                     title="DESTINATION"
@@ -80,23 +81,29 @@ const Header = () => {
                   >
                    
                       
-                    <NavLink className="nav-link text-dark" to="/" >
-                    SPAIN TOURS
-                  </NavLink>
+                   <HashLink className="nav-link text-dark" smooth to="/#places">
+  KERALA TOURS
+</HashLink>
+                  <HashLink className="nav-link text-dark" to="/#places" >
+                    PONDICHERRY TOURS
+                  </HashLink>
+                  <HashLink className="nav-link text-dark" to="/#places" >
+                    GOA TOURS
+                  </HashLink>
                   
                    
                   </NavDropdown>
-                  <NavLink className="nav-link" to="/" >
+                  <HashLink className="nav-link" to="/#gallery" >
                     GALLERY
-                  </NavLink>
-                  <NavLink className="nav-link" to="/" >
+                  </HashLink>
+                  <HashLink className="nav-link" to="/#contact" >
                     CONTACT
-                  </NavLink>
+                  </HashLink>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
             <div className="ms-md-4 ms-2">
-              <NavLink className="primaryBtn d-none d-sm-inline-block">
+              <NavLink className="primaryBtn d-none d-sm-inline-block" to="/offers">
                 Book Now
               </NavLink>
               <li className="d-inline-block d-lg-none ms-3 toggle_btn">

@@ -10,13 +10,20 @@ import CustomDropdown from "../CustomDropdown/CustomDropdown";
 const AdvanceSearch = () => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
-
+  let location= undefined;
+  let guest=undefined;
   const selectedLocation =(value)=>{
-    console.log("Location", value)
+   location=value;
   }
 
   const selectedGuest =(value)=>{
-    console.log("Guest ", value)
+    guest=value;
+  }
+
+  function validate(){
+    if (!location || !guest){
+      alert("Input all the values before trying to search.")
+    }
   }
 
   return (
@@ -32,16 +39,19 @@ const AdvanceSearch = () => {
                     label="Location"
                     onSelect={selectedLocation}
                     options={[
-                      "USA, Turkish",
-                      "Tokyo, Japan",
-                      "Sydney, Australia",
-                      "Melbourne, Australia",
-                      "Paris, France",
+                      "Jaipur, Rajasthan",
+                      "Varanasi, Uttar Pradesh",
+                      "Goa",
+                      "Pondicherry",
+                      "Leh-Ladakh",
+                      "Kochi, Kerela",
+                      "New Delhi",
+                      "Coorg"
                     ]}
                   />
                 </div>
                 <div className="item-search item-search-2">
-                  <label className="item-search-label"> Check in </label>
+                  <label className="item-search-label"> Start </label>
                   <DatePicker
                     selected={startDate}
                     onChange={(date) => setStartDate(date)}
@@ -53,7 +63,7 @@ const AdvanceSearch = () => {
                   />
                 </div>
                 <div className="item-search item-search-2">
-                  <label className="item-search-label"> Check Out </label>
+                  <label className="item-search-label"> End</label>
                   <DatePicker
                     selected={endDate}
                     onChange={(date) => setEndDate(date)}
@@ -75,7 +85,7 @@ const AdvanceSearch = () => {
                   />
                 </div>
                 <div className="item-search bd-none">
-                    <Button className="primaryBtn flex-even d-flex justify-content-center">
+                    <Button className="primaryBtn flex-even d-flex justify-content-center" onClick={validate}>
                     <i className="bi bi-search me-2"></i> Search 
                     </Button>
 
